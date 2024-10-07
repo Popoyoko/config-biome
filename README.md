@@ -11,22 +11,13 @@ Welcome to the repository for the Popoyoko Biome configuration! This repository 
 
 ## Installation
 
-To use this Biome configuration, follow these steps:
-
-1. **Install Dependencies:**
+To use this Biome configuration, just paste this in yout terminal
 
    ```bash
    bun add --dev --exact @biomejs/biome
    bun add git@github.com:Popoyoko/config-biome.git
    bunx biome init
-   ```
-
-2. **Configuration:**²
-
-   dd this line to your biome.js file
-
-   ```json
-   "extends": ["configuration/biome"],
+   sed -i '2s/^/    "extends": ["configuration\/biome"],\n/' biome.json
    ```
 
 ## Run the config in your project
